@@ -1,0 +1,29 @@
+{
+  "root": true,
+  "project": {
+    "name": "uniswap-clone-02-12-22"
+  },
+  "api": {
+    "projectId": "p6y3vrj4",
+    "dataset": "production"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}
